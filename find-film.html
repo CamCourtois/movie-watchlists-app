@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="find-film.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Oswald&family=Raleway:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="header-search-container">
+        <div id="header" class="header">
+          <h1>Find your film</h1>
+          <div>
+            <a href="watchlist.html"><h4>My Watchlist</h4></a>
+            <i id="notif-icon" class="fa-solid fa-bell notif-icon fade-in"></i>
+          </div>
+        </div>
+        <div id="search-box" class="search-box fade-in-element">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            id="film-search"
+            class="film-search"
+            type="text"
+            placeholder="Search for a movie"
+          />
+          <button id="search-btn">Search</button>
+        </div>
+      </div>
+      <div id="film-list" class="film-list fade-in-element"></div>
+      <div id="empty-film-list" class="empty-film-list-icon-container">
+        <i class="fa-solid fa-film fa-lg"></i>
+        <h2>Start exploring</h2>
+      </div>
+    </div>
+    <script src="find-film.js"></script>
+  </body>
+</html>
